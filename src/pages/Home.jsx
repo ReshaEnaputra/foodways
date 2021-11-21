@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {NavLink, Link} from 'react-router-dom';
 import homeStyle from './styles/home.module.css'
 
@@ -14,67 +14,92 @@ import gb from './photos/geprekbensu.png'
 import nasgor from './photos/nasgor.png'
 import pecel from './photos/pecel.png'
 import kopi from './photos/kopi.png'
+import 'reactjs-popup/dist/index.css';
+import ModalRegister from './components/modal/register';
+import ModalLogin from './components/modal/login';
 
-const Home = () => {
-    return (
-        <div className={homeStyle.mainContainer}>
-            <div className={homeStyle.topContainer}>
-                <div className={homeStyle.logoContainer}>
-                    <p className={homeStyle.logoP}>WaysFood</p>
-                    <img className={homeStyle.logo} src={logo} alt="" />
-                    <NavLink className={homeStyle.regBtn} to={`/Register`}>Register</NavLink>
-                    <NavLink className={homeStyle.logBtn} to={`/Login`}>Login</NavLink>
+class Home extends Component {
+    constructor(props){
+        super(props)
+
+        this.modalRegisterRef = React.createRef()
+        this.modalLoginRef = React.createRef()
+    }
+    showModalRegister = () => {
+        this.modalRegisterRef.current.show()
+    }
+    showModalLogin = () => {
+        this.modalLoginRef.current.show()
+    }
+    render() {
+        return(
+            <React.Fragment>
+                <div className={homeStyle.mainContainer}>
+                    <div className={homeStyle.topContainer}>
+                        <div className={homeStyle.logoContainer}>
+                            <p className={homeStyle.logoP}>WaysFood</p>
+                            <img className={homeStyle.logo} src={logo} alt="" />
+                            <button className={homeStyle.regBtn} onClick={() => this.showModalRegister()}>Register</button>
+                            <button className={homeStyle.logBtn} onClick={() => this.showModalLogin()}>Login</button>
+                        </div>
+                        <div className={homeStyle.topcontentContainer}>
+                            <p className={homeStyle.hungry}>Are You Hungry?</p>
+                            <p className={homeStyle.deliv}>Express Home Delivery</p>
+                            <img className={homeStyle.pizza} src={pizza} alt="" />
+                            <hr className={homeStyle.line} />
+                            <p className={homeStyle.lorem}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                    </div>
+                    <div className={homeStyle.contentContainer}>
+                        <p className={homeStyle.subHeader}>Popular Restaurant</p>
+                        <div className={homeStyle.cardContainer1}>
+                            <img className={homeStyle.logos} src={burgerking} alt="" />
+                            <p className={homeStyle.logoName}>Burger King</p>
+                        </div>
+                        <div className={homeStyle.cardContainer2}>
+                            <img className={homeStyle.logos} src={starbucks} alt="" />
+                            <p className={homeStyle.logoName}>Starbucks</p>
+                        </div>
+                        <div className={homeStyle.cardContainer3}>
+                            <img className={homeStyle.logos} src={kfc} alt="" />
+                            <p className={homeStyle.logoName}>KFC</p>
+                        </div>
+                        <div className={homeStyle.cardContainer4}>
+                            <img className={homeStyle.logos} src={jco} alt="" />
+                            <p className={homeStyle.logoName}>J.CO</p>
+                        </div>
+                        <p className={homeStyle.subHeader1}>Restaurant Near You</p>
+                        <NavLink className={homeStyle.cardContainer5} to={`/Login`}>
+                            <img className={homeStyle.makanan} src={gb} alt="" />
+                            <p className={homeStyle.nama}>Geprek Bensu</p>
+                            <p className={homeStyle.jarak}>0,2 KM</p>
+                        </NavLink>
+                        <div className={homeStyle.cardContainer6}>
+                            <img className={homeStyle.makanan} src={nasgor} alt="" />
+                            <p className={homeStyle.nama}>Nasi Goreng Mas Rony</p>
+                            <p className={homeStyle.jarak}>0,6 KM</p>
+                        </div>
+                        <div className={homeStyle.cardContainer7}>
+                            <img className={homeStyle.makanan} src={pecel} alt="" />
+                            <p className={homeStyle.nama}>Pecel Ayam Prambanan</p>
+                            <p className={homeStyle.jarak}>0,6 KM</p>
+                        </div>
+                        <div className={homeStyle.cardContainer8}>
+                            <img className={homeStyle.makanan} src={kopi} alt="" />
+                            <p className={homeStyle.nama}>Kopi Kenangan</p>
+                            <p className={homeStyle.jarak}>1,6 KM</p>
+                        </div>
+                    </div>
                 </div>
-                <div className={homeStyle.topcontentContainer}>
-                    <p className={homeStyle.hungry}>Are You Hungry?</p>
-                    <p className={homeStyle.deliv}>Express Home Delivery</p>
-                    <img className={homeStyle.pizza} src={pizza} alt="" />
-                    <hr className={homeStyle.line} />
-                    <p className={homeStyle.lorem}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-            </div>
-            <div className={homeStyle.contentContainer}>
-                <p className={homeStyle.subHeader}>Popular Restaurant</p>
-                <div className={homeStyle.cardContainer1}>
-                    <img className={homeStyle.logos} src={burgerking} alt="" />
-                    <p className={homeStyle.logoName}>Burger King</p>
-                </div>
-                <div className={homeStyle.cardContainer2}>
-                    <img className={homeStyle.logos} src={starbucks} alt="" />
-                    <p className={homeStyle.logoName}>Starbucks</p>
-                </div>
-                <div className={homeStyle.cardContainer3}>
-                    <img className={homeStyle.logos} src={kfc} alt="" />
-                    <p className={homeStyle.logoName}>KFC</p>
-                </div>
-                <div className={homeStyle.cardContainer4}>
-                    <img className={homeStyle.logos} src={jco} alt="" />
-                    <p className={homeStyle.logoName}>J.CO</p>
-                </div>
-                <p className={homeStyle.subHeader1}>Restaurant Near You</p>
-                <NavLink className={homeStyle.cardContainer5} to={`/Login`}>
-                    <img className={homeStyle.makanan} src={gb} alt="" />
-                    <p className={homeStyle.nama}>Geprek Bensu</p>
-                    <p className={homeStyle.jarak}>0,2 KM</p>
-                </NavLink>
-                <div className={homeStyle.cardContainer6}>
-                    <img className={homeStyle.makanan} src={nasgor} alt="" />
-                    <p className={homeStyle.nama}>Nasi Goreng Mas Rony</p>
-                    <p className={homeStyle.jarak}>0,6 KM</p>
-                </div>
-                <div className={homeStyle.cardContainer7}>
-                    <img className={homeStyle.makanan} src={pecel} alt="" />
-                    <p className={homeStyle.nama}>Pecel Ayam Prambanan</p>
-                    <p className={homeStyle.jarak}>0,6 KM</p>
-                </div>
-                <div className={homeStyle.cardContainer8}>
-                    <img className={homeStyle.makanan} src={kopi} alt="" />
-                    <p className={homeStyle.nama}>Kopi Kenangan</p>
-                    <p className={homeStyle.jarak}>1,6 KM</p>
-                </div>
-            </div>
-        </div>
-    )
+                <ModalRegister 
+                    ref={this.modalRegisterRef}
+                />
+                <ModalLogin 
+                    ref={this.modalLoginRef}
+                />
+            </React.Fragment>
+        )
+    }
 }
 
 export default Home

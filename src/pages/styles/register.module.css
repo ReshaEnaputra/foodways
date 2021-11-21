@@ -8,13 +8,14 @@
 }
 
 .formContainer {
-    position: relative;
-    width: 416px;
-    height: 694px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    background: #FFFFFF;
-    border-radius: 10px;
+    /* text-align: center; */
+    /* position: relative; */
+    /* width: 416px; */
+    height: 694px;  
+    /* margin-top: 200px;
+    margin-bottom: 200px; */
+    /* background: #FFFFFF; */
+    /* border-radius: 10px; */
 }
 
 .header {

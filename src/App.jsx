@@ -19,6 +19,7 @@ import Add from "./pages/Add"
 import Menu from "./pages/components/menu/NavbarMenu"
 
 import './App.css'
+import Maps from './pages/maps'
 
 const App = () => {
   return  (
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/Edit1" element={<Edit1/>}/>
           <Route path="/Table" element={<Table/>}/>
           <Route path="/Add" element={<Add/>}/>
+          <Route path="/maps" element={<Maps/>}/>
         </Routes>
       </Router>
     </div>

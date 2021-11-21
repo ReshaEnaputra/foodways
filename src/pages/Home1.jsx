@@ -16,6 +16,7 @@ import gb from './photos/geprekbensu.png'
 import nasgor from './photos/nasgor.png'
 import pecel from './photos/pecel.png'
 import kopi from './photos/kopi.png'
+import Popup from 'reactjs-popup';
 
 const Home1 = () => {
     return (
@@ -24,7 +25,16 @@ const Home1 = () => {
                 <div className={homeStyle.logoContainer}>
                     <p className={homeStyle.logoP}>WaysFood</p>
                     <img className={homeStyle.logo} src={logo} alt="" />
-                    <div style={{backgroundImage: `url(${pp1})`}} className={homeStyle.pp1}></div>
+                    <Popup 
+                        trigger={<div style={{backgroundImage: `url(${pp1})`}} 
+                        className={homeStyle.pp1}></div>} 
+                        position="bottom center"
+                        on={['hover', 'focus']}
+                        arrow = {'center center'}
+                    >
+                        <NavLink  to={`/profile1`}> Profile </NavLink>
+                        <NavLink to={`/`}> Logout </NavLink>
+                    </Popup>
                 </div>
                 <div className={homeStyle.topcontentContainer}>
                     <p className={homeStyle.hungry}>Are You Hungry?</p>

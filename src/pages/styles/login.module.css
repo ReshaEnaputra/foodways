@@ -1,0 +1,104 @@
+.mainContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+.formContainer {
+    position: relative;
+    width: 416px;
+    height: 408px;
+    
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.header {
+    position: absolute;
+    width: 95px;
+    height: 49px;
+    left: 33px;
+    top: 41px;
+    
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 49px;
+    
+    color: #FFC700;    
+}
+
+.input {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 119px;
+    padding-left: 12px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.input1 {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 189px;
+    padding-left: 12px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.btn {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 275px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #433434;
+    border-radius: 5px;
+
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.para {
+    position: absolute;
+    width: 276px;
+    height: 25px;
+    left: 65px;
+    top: 346px;
+    display: flex;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #B1B1B1;
+}
+
+.ap {
+    text-decoration: none;
+    color: #B1B1B1;
+    font-weight: bold;
+}

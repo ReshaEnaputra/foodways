@@ -1,0 +1,168 @@
+.mainContainer {
+    width: 100%;
+    height: 645px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #EFEFEF;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    position: absolute;
+    width: 399px;
+    height: 42px;
+    left: 197px;
+    top: 164px;
+    
+    font-family: Abhaya Libre ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.tableContainer {
+    margin-top: 150px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.noH {
+    width: 72px;
+    height: 40px;
+    margin: 0px;
+    background: #E5E5E5;
+    border: 1px solid #828282;
+    border-radius: 1px 0px 0px 0px;
+}
+
+.nameH {
+    width: 183px;
+    height: 40px;
+    margin: 0px;
+    background: #E5E5E5;
+    border: 1px solid #828282;
+}
+
+.addressH {
+    width: 280px;
+    height: 40px;
+    background: #E5E5E5;
+    border: 1px solid #828282;
+}
+
+.orderedH {
+    width: 191px;
+    height: 40px;
+    background: #E5E5E5;
+    border: 1px solid #828282;
+}
+
+.statusH {
+    width: 160px;
+    height: 40px;
+    background: #E5E5E5;
+    border: 1px solid #828282;
+}
+
+.actionH {
+    width: 191px;
+    height: 40px;
+    border-radius: 0px 1px 0px 0px;
+    background: #E5E5E5;
+    border: 1px solid #828282;
+}
+
+.no {
+    padding-left: 10px;
+    width: 72px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #828282;
+    background-color: white;
+}
+
+.name {
+    padding-left: 10px;
+    width: 183px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #828282;
+    background-color: white;
+}
+
+.address {
+    padding-left: 10px;
+    width: 183px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #828282;
+    background-color: white;
+}
+
+.ordered {
+    padding-left: 10px;
+    width: 183px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #828282;
+    background-color: white;
+}
+
+.status {
+    padding-left: 10px;
+    width: 183px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #828282;
+    background-color: white;
+}
+
+.action {
+    width: 191px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #828282;
+    background-color: white;
+}
+
+.approve {
+    width: 80px;
+    height: 20px;
+    color: whitesmoke;
+    background: #0ACF83;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.cancel {
+    width: 80px;
+    height: 20px;
+    color: whitesmoke;
+    background: #FF0742;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btnContainer {
+    width: 191px;
+    height: 40px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.check {
+    width: 25px;
+}
+
+.cross {
+    width: 25px;
+}

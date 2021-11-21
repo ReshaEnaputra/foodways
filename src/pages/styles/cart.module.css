@@ -1,0 +1,385 @@
+.mainContainer {
+    width: 1005;
+    height: 866px;
+
+    background: #EFEFEF;
+}
+
+.header {
+    position: absolute;
+    width: 311px;
+    height: 42px;
+    left: 197px;
+    top: 164px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #000000;
+}
+
+.delivHeader {
+    position: absolute;
+    width: 140px;
+    height: 25px;
+    left: 197px;
+    top: 236px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    
+    color: #613D2B;
+}
+
+.address {
+    position: absolute;
+    width: 780px;
+    height: 47px;
+    left: 193px;
+    top: 276px;
+    padding-left: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.mapBtn {
+    display: flex;
+    position: absolute;
+    width: 222px;
+    height: 47px;
+    left: 1015px;
+    top: 276px;
+    color: whitesmoke;
+    background: #433434;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContent {
+    display: flex;
+    align-items: center;
+}
+
+.subHeader {
+    position: absolute;
+    width: 152px;
+    height: 25px;
+    left: 197px;
+    top: 346px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    
+    color: #613D2B;
+}
+
+.line1 {
+    position: absolute;
+    width: 660px;
+    height: 0px;
+    left: 197px;
+    top: 380px;
+    
+    border: 1px solid #000000;
+}
+
+.line2 {
+    position: absolute;
+    width: 660px;
+    height: 0px;
+    left: 197px;
+    top: 499px;
+    
+    border: 1px solid #000000;
+}
+
+.line3 {
+    position: absolute;
+    width: 660px;
+    height: 0px;
+    left: 197px;
+    top: 618px;
+    
+    border: 1px solid #000000;
+}
+
+.line4 {
+    position: absolute;
+    width: 350px;
+    height: 0px;
+    left: 889px;
+    top: 380px;
+    
+    border: 1px solid #000000;
+}
+
+.line5 {
+    position: absolute;
+    width: 350px;
+    height: 0px;
+    left: 889px;
+    top: 498px;
+    
+    border: 1px solid #000000;
+}
+
+.food1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 197px;
+    top: 397px;
+}
+
+.food2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 197px;
+    top: 516px;
+}
+
+.name {
+    position: absolute;
+    width: 120px;
+    height: 17px;
+    left: 290px;
+    top: 411px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+}
+
+.name1 {
+    position: absolute;
+    width: 150px;
+    height: 17px;
+    left: 290px;
+    top: 530px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    position: absolute;
+    width: 64px;
+    height: 19px;
+    left: 791px;
+    top: 410px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #FF0000;
+}
+
+.price1 {
+    position: absolute;
+    width: 64px;
+    height: 19px;
+    left: 791px;
+    top: 529px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #FF0000;
+}
+
+.trash1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 837px;
+    top: 446px;
+}
+
+.trash2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 837px;
+    top: 565px;
+}
+
+.orderBtn {
+    position: absolute;
+    width: 260px;
+    height: 40px;
+    left: 980px;
+    top: 697px;
+    color: whitesmoke;
+    background: #433434;
+    border-radius: 5px;
+}
+
+.mapIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.total1 {
+    position: absolute;
+    width: 53px;
+    height: 19px;
+    left: 889px;
+    top: 394px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.total2 {
+    position: absolute;
+    width: 64px;
+    height: 19px;
+    left: 1172px;
+    top: 394px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    
+    color: #FF0000;
+    
+}
+
+.total3 {
+    position: absolute;
+    width: 24px;
+    height: 19px;
+    left: 889px;
+    top: 425px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+}
+
+.total4 {
+    position: absolute;
+    width: 8px;
+    height: 19px;
+    left: 1229px;
+    top: 425px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+}
+
+.total5 {
+    position: absolute;
+    width: 43px;
+    height: 19px;
+    left: 889px;
+    top: 456px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+}
+
+.total6 {
+    position: absolute;
+    width: 51px;
+    height: 19px;
+    left: 1186px;
+    top: 456px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    
+    color: #FF0000;
+}
+
+.total7 {
+    position: absolute;
+    width: 32px;
+    height: 19px;
+    left: 889px;
+    top: 512px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #FF0000;
+}
+
+.total8 {
+    position: absolute;
+    width: 68px;
+    height: 19px;
+    left: 1171px;
+    top: 512px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    
+    color: #FF0000;
+}
+
+.priceContainer {
+    font-family: Arial, Helvetica, sans-serif;
+}

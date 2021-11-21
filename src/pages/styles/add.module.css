@@ -1,0 +1,94 @@
+.mainContainer {
+    height: 645px;
+    width: 100%;
+    border-radius: 0px;
+    background: #EFEFEF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p {
+    position: absolute;
+    width: 292px;
+    height: 42px;
+    left: 197px;
+    top: 164px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.title {
+    position: absolute;
+    width: 927px;
+    height: 50px;
+    left: 172px;
+    top: 246px;
+    padding-left: 10px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #766C6C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.label {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 213px;
+    height: 50px;
+    left: 1116px;
+    top: 246px;
+    cursor: pointer;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #766C6C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #4C4C4C;
+}
+
+.label:hover {
+    background: rgba(150, 149, 149, 0.25);
+}
+
+.fileInput {
+    display: none;
+}
+
+.price {
+    position: absolute;
+    width: 1157px;
+    height: 50px;
+    left: 172px;
+    top: 323px;
+    padding-left: 10px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #766C6C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.submitBtn {
+    position: absolute;
+    width: 260px;
+    height: 40px;
+    left: 1069px;
+    top: 413px;
+    color: whitesmoke;
+    font-weight: 700;
+    background: #433434;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.submitBtn:hover {
+    background-color: #5e4949;
+}
